@@ -1,59 +1,51 @@
-## Introduction
+One of the best parts about using a grid layout is that it allows you to precisely place items. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+### Default placement
 
-### What you will make
+By default when you put elements in a container with the `display: grid;` property, each item will take up **one grid cell** ordered first left-right and then top-bottom.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+![An example grid with 6 items, the top row reads - 1, 2, 3. The bottom row is 4, 5, 6.](images/default-grid-placement.png)
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+One way you can control the placement of your elements is by changing the order of the actual HTML. 
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+### Stretching items across rows and columns
 
---- collapse ---
+If you want to stretch elements so they cover more than one row or column you can use the following properties:
++ `grid-row-start` & `grid-row-end`
++ `grid-column-start` & `grid-column-end`
+
+The `grid-row-start` property is the **first** row the element will display in. 
+
+`grid-row-end` is the row where the element ends - the image will **not** display on this row.
+
+The same works for `grid-column-start` & `grid-column-end`.
+
+You add these properties to the class for the element you want to stretch. 
+
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: css
+filename: style.css 
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+.stretch-rows {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
---- /collapse ---
+--- /code ---
 
---- collapse ---
+--- code ---
 ---
-title: Additional information for educators
+language: css
+filename: style.css 
 ---
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+.stretch-columns {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+--- /code ---
 
---- /collapse ---
+![The example grid, with the number 1 item stretching across rows 1 and 2. Grid item 4 stretches across columns 2 and 3 in the bottom row.](images/placing-grid-items.png)
