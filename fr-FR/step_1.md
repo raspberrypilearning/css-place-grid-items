@@ -1,27 +1,27 @@
-One of the best parts about using a grid layout is that it allows you to precisely place items.
+L'un des avantages de l'utilisation d'une grille est qu'elle permet de placer les éléments avec précision.
 
-### Default placement
+### Placement par défaut
 
-By default when you put elements in a container with the `display: grid;` property, each item will take up **one grid cell** ordered first left-right and then top-bottom.
+Par défaut, lorsque tu places des éléments dans un conteneur avec la propriété `display : grid;`, chaque élément occupera **une cellule de la grille**, ordonnée d'abord de gauche à droite, puis de haut en bas.
 
-![An example grid with 6 items, the top row reads - 1, 2, 3. The bottom row is 4, 5, 6.](images/default-grid-placement.png)
+![Un exemple de grille avec 6 éléments, la rangée supérieure indique - 1, 2, 3. La rangée du bas indique 4, 5, 6.](images/default-grid-placement.png)
 
-One way you can control the placement of your elements is by changing the order of the actual HTML.
+Une façon de contrôler le placement de tes éléments est de modifier l'ordre du code HTML actuel.
 
-### Stretching items across rows and columns
+### Étirement des éléments sur des lignes et des colonnes
 
-If you want to stretch elements so they cover more than one row or column you can use the following properties:
+Si tu veux étirer des éléments pour qu'ils occupent plus d'une ligne ou d'une colonne, tu peux utiliser les propriétés suivantes :
 
-- `grid-row-start` & `grid-row-end`
-- `grid-column-start` & `grid-column-end`
+- `grid-row-start` et `grid-row-end`
+- `grid-column-start` et `grid-column-end`
 
-The `grid-row-start` property is the **first** row the element will display in.
+La propriété `grid-row-start` est la **première** ligne dans laquelle l'élément s'affichera.
 
-`grid-row-end` is the row where the element ends - the image will **not** display on this row.
+`grid-row-end` est la ligne où l'élément se termine : l'image ne sera **pas** affichée sur cette ligne.
 
-The same works for `grid-column-start` & `grid-column-end`.
+Il en va de même pour `grid-column-start` et `grid-column-end`.
 
-You add these properties to the class for the element you want to stretch.
+Tu ajoutes ces propriétés à la classe de l'élément que tu veux étirer.
 
 ## --- code ---
 
@@ -49,4 +49,4 @@ grid-column-end: 4;
 
 \--- /code ---
 
-![The example grid, with the number 1 item stretching across rows 1 and 2. Grid item 4 stretches across columns 2 and 3 in the bottom row.](images/placing-grid-items.png)
+![La grille d'exemple, avec l'élément numéro 1 s'étendant sur les lignes 1 et 2. L'élément 4 de la grille s'étend sur les colonnes 2 et 3 de la rangée inférieure.](images/placing-grid-items.png)
