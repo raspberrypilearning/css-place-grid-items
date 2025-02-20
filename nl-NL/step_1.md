@@ -1,27 +1,27 @@
-One of the best parts about using a grid layout is that it allows you to precisely place items.
+Een van de beste aspecten van een rasterindeling is dat je items heel nauwkeurig kunt plaatsen.
 
-### Default placement
+### Standaard plaatsing
 
-By default when you put elements in a container with the `display: grid;` property, each item will take up **one grid cell** ordered first left-right and then top-bottom.
+Wanneer je elementen in een container plaatst met de eigenschap `display: grid;`, neemt elk item standaard **één rastercel** in beslag, gesorteerd van links naar rechts en vervolgens van boven naar beneden.
 
-![An example grid with 6 items, the top row reads - 1, 2, 3. The bottom row is 4, 5, 6.](images/default-grid-placement.png)
+![Een voorbeeldraster met 6 items, de bovenste rij luidt - 1, 2, 3. De onderste rij is 4, 5, 6.](images/default-grid-placement.png)
 
-One way you can control the placement of your elements is by changing the order of the actual HTML.
+Eén manier waarop je de plaatsing van jouw elementen kunt bepalen, is door de volgorde van de HTML zelf te wijzigen.
 
-### Stretching items across rows and columns
+### Items over rijen en kolommen verspreiden
 
-If you want to stretch elements so they cover more than one row or column you can use the following properties:
+Als je elementen wilt uitrekken zodat ze meer dan één rij of kolom beslaan, kun je de volgende eigenschappen gebruiken:
 
 - `grid-row-start` & `grid-row-end`
 - `grid-column-start` & `grid-column-end`
 
-The `grid-row-start` property is the **first** row the element will display in.
+De `grid-row-start` eigenschap is de **eerste** rij waarin het element wordt weergegeven.
 
-`grid-row-end` is the row where the element ends - the image will **not** display on this row.
+`grid-row-end` is de rij waar het element eindigt — de afbeelding zal **niet** op deze rij worden weergegeven.
 
-The same works for `grid-column-start` & `grid-column-end`.
+Hetzelfde geldt voor `grid-column-start` & `grid-column-end`.
 
-You add these properties to the class for the element you want to stretch.
+Je voegt deze eigenschappen toe aan de klasse van het element dat je wilt spreiden.
 
 ## --- code ---
 
@@ -49,4 +49,4 @@ grid-column-end: 4;
 
 \--- /code ---
 
-![The example grid, with the number 1 item stretching across rows 1 and 2. Grid item 4 stretches across columns 2 and 3 in the bottom row.](images/placing-grid-items.png)
+![Het voorbeeldraster, met het item met nummer 1 verspreid over rij 1 en 2. Rasteritem 4 is verspreid over kolom 2 en 3 in de onderste rij.](images/placing-grid-items.png)
