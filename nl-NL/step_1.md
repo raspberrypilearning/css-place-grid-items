@@ -2,22 +2,22 @@ Een van de beste aspecten van een rasteropmaak is dat je items heel nauwkeurig k
 
 ### Standaard plaatsing
 
-Wanneer je elementen in een container plaatst met de eigenschap `display: grid;`, neemt elk item standaard **één rastercel** in beslag, gesorteerd van links naar rechts en vervolgens van boven naar beneden.
+By default, when you put elements in a container with the `display: grid;` property, each item will take up **one grid cell** ordered first left to right and then top to bottom.
 
-![Een voorbeeldraster met 6 items, de bovenste rij luidt - 1, 2, 3. De onderste rij is 4, 5, 6.](images/default-grid-placement.png)
+![An example grid with 6 items, the top row reads 1, 2, 3. De onderste rij is 4, 5, 6.](images/default-grid-placement.png)
 
 Eén manier waarop je de plaatsing van jouw elementen kunt bepalen, is door de volgorde van de HTML zelf te wijzigen.
 
 ### Items over rijen en kolommen verspreiden
 
-Als je elementen wilt verspreiden zodat ze meer dan één rij of kolom beslaan, kun je de volgende eigenschappen gebruiken:
+If you want to stretch elements so they cover more than one row or column, you can use the following properties:
 
 - `grid-row-start` & `grid-row-end`
 - `grid-column-start` & `grid-column-end`
 
 De `grid-row-start` eigenschap is de **eerste** rij waarin het element wordt weergegeven.
 
-`grid-row-end` is de rij waar het element eindigt — de afbeelding zal **niet** op deze rij worden weergegeven.
+`grid-row-end` is the row where the element ends. The image will **not** display on this row.
 
 Hetzelfde geldt voor kolommen met `grid-column-start` & `grid-column-end`.
 
