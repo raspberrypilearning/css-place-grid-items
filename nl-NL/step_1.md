@@ -1,4 +1,4 @@
-Een van de beste aspecten van een rasterindeling is dat je items heel nauwkeurig kunt plaatsen.
+Een van de beste aspecten van een rasteropmaak is dat je items heel nauwkeurig kunt plaatsen.
 
 ### Standaard plaatsing
 
@@ -10,7 +10,7 @@ Eén manier waarop je de plaatsing van jouw elementen kunt bepalen, is door de v
 
 ### Items over rijen en kolommen verspreiden
 
-Als je elementen wilt uitrekken zodat ze meer dan één rij of kolom beslaan, kun je de volgende eigenschappen gebruiken:
+Als je elementen wilt verspreiden zodat ze meer dan één rij of kolom beslaan, kun je de volgende eigenschappen gebruiken:
 
 - `grid-row-start` & `grid-row-end`
 - `grid-column-start` & `grid-column-end`
@@ -19,9 +19,9 @@ De `grid-row-start` eigenschap is de **eerste** rij waarin het element wordt wee
 
 `grid-row-end` is de rij waar het element eindigt — de afbeelding zal **niet** op deze rij worden weergegeven.
 
-Hetzelfde geldt voor `grid-column-start` & `grid-column-end`.
+Hetzelfde geldt voor kolommen met `grid-column-start` & `grid-column-end`.
 
-Je voegt deze eigenschappen toe aan de klasse van het element dat je wilt spreiden.
+Je voegt deze eigenschappen toe aan de klasse van het element dat je wilt verspreiden.
 
 ## --- code ---
 
@@ -49,4 +49,4 @@ grid-column-end: 4;
 
 \--- /code ---
 
-![Het voorbeeldraster, met het item met nummer 1 verspreid over rij 1 en 2. Rasteritem 4 is verspreid over kolom 2 en 3 in de onderste rij.](images/placing-grid-items.png)
+![Het voorbeeldraster, met het item met nummer 1 verspreid over rij 1 en 2. Rasteritem 4 is verspreid over kolommen 2 en 3 in de onderste rij.](images/placing-grid-items.png)
