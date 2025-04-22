@@ -2,22 +2,22 @@ L'un des avantages de l'utilisation d'une grille est qu'elle permet de placer le
 
 ### Placement par défaut
 
-Par défaut, lorsque tu places des éléments dans un conteneur avec la propriété `display : grid;`, chaque élément occupera **une cellule de la grille**, ordonnée d'abord de gauche à droite, puis de haut en bas.
+By default, when you put elements in a container with the `display: grid;` property, each item will take up **one grid cell** ordered first left to right and then top to bottom.
 
-![Un exemple de grille avec 6 éléments, la rangée supérieure indique - 1, 2, 3. La rangée du bas indique 4, 5, 6.](images/default-grid-placement.png)
+![An example grid with 6 items, the top row reads 1, 2, 3. La rangée du bas indique 4, 5, 6.](images/default-grid-placement.png)
 
 Une façon de contrôler le placement de tes éléments est de modifier l'ordre du code HTML actuel.
 
 ### Étirement des éléments sur des lignes et des colonnes
 
-Si tu veux étirer des éléments pour qu'ils occupent plus d'une ligne ou d'une colonne, tu peux utiliser les propriétés suivantes :
+If you want to stretch elements so they cover more than one row or column, you can use the following properties:
 
 - `grid-row-start` et `grid-row-end`
 - `grid-column-start` et `grid-column-end`
 
 La propriété `grid-row-start` est la **première** ligne dans laquelle l'élément s'affichera.
 
-`grid-row-end` est la ligne où l'élément se termine : l'image ne sera **pas** affichée sur cette ligne.
+`grid-row-end` is the row where the element ends. The image will **not** display on this row.
 
 Il en va de même pour `grid-column-start` et `grid-column-end`.
 
